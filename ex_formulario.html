@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário_ex</title>
+</head>
+<body>
+    <form action="servidor.php" method="post">
+        <fieldset>
+            <legend><b>Formulário de contacto BYTES</b></legend>
+            <label for="Name">Nome:</label>
+            <input type="text" name="iName" id="Name" placeholder="Insira o seu nome aqui">
+            <br><br>
+            <label for="Email">E-mail:</label>
+            <input type="email" name="e_Mail" id="Email" placeholder="Insira o seu e-mail aqui">
+            <br><br>
+            <legend>Género:</legend>
+            <input type="radio" name="Genero" id="Masc">
+            <label for="Masc">Masculino</label>
+            <br>
+            <input type="radio" name="Genero" id="Fem">
+            <label for="Fem">Feminino</label>
+            <p></p>
+            <label for="Data_Atual">Data atual:</label>
+            <input type="date" name="Data" id="Data_Atual">
+            <br> <br>
+            <label for="Turma">Turma:</label>
+            <select name="Turno_Turma" id="Turma">
+                <option disabled selected value=""></option>
+                <option value="Manhã">Manhã</option>
+                <option value="Tarde">Tarde</option>
+                <option value="Sem preferência">Sem preferência</option>
+            </select>
+            <br><br>
+            <label for="Mensagem">Mensagem:</label>
+            <textarea name="Mensag" id="Mensagem" placeholder="Escreva aqui a sua mensagem"></textarea>
+            <p></p>
+            <button type="reset">Limpar</button>
+            <input type="submit">
+        </fieldset>
+    </form>
+</body>
+</html>

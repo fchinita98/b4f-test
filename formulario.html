@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Bytes4Future</title>
+</head>
+<body>
+    <h1>Formulário B4F</h1>
+    <form action="servidor.php" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" name="firstName" id="nome">
+        <p></p>
+        <label for="apelido">Apelido</label>
+        <input type="text" name="secondName" id="apelido">
+        <p></p>
+        <label for="dataNascimento">Data Nascimento</label>
+        <input type="date" name="birthDate" id="dataNascimento">
+        <p></p>
+        <label for="">Password</label>
+        <input type="password">
+        <p></p>
+        <fieldset>
+            <legend>Programa</legend>
+            <input type="radio" name="Programa" id="Junior_FullStack">
+            <label for="Junior_FullStack">Junior FullStack Developer</label>
+            <br>
+            <input type="radio" name="Programa" id="Data_Analyst">
+            <label for="Data_Analyst">Data Analyst</label>
+        </fieldset>
+        <fieldset>
+            <legend>Turno</legend>
+            <input type="checkbox" name="Manhã" id="Turno_Manhã">
+            <label for="Turno_Manhã">Manhã (09-13h)</label>
+            <br>
+            <input type="checkbox" name="Tarde" id="Turno_Tarde">
+            <label for="Turno_Tarde">Tarde (14-18h)</label>
+            <br>
+            <input type="checkbox" name="SemPref" id="Sem_Preferencia">
+            <label for="Sem_Preferencia">Sem preferência</label>
+        </fieldset>
+        <p></p>
+        <input type="submit">
+    </form>
+</body>
+</html>
